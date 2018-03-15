@@ -1,15 +1,18 @@
 package rayleighquotient;
 
+import util.MatrixUtil;
+import util.VectorUtil;
+
 public class RayleighQuotient {
 
     /**
-     *
-     * @param A matrix A
-     * @param eigenvector eigenvector of A
+     * @param matrix      matrix
+     * @param eigenvector eigenvector of matrix
      * @return corresponding eigenvalue of the eigenvector
      */
-    public static double computeRayleighQuotient(double[][] A, double[] eigenvector) {
-        return 0;
+    public static double rayleighQuotient(double[][] matrix, double[] eigenvector) {
+        return VectorUtil.dotProduct(MatrixUtil.multiplyVectorByMatrix(matrix, eigenvector), eigenvector) / VectorUtil
+            .dotProduct(eigenvector, eigenvector);
     }
 
 }
