@@ -3,6 +3,7 @@ package util;
 public class MatrixUtil {
 
     // TODO: dimension checks
+
     /**
      * @param matrix matrix
      * @param vector vector
