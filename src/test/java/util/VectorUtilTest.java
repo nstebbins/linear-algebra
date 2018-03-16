@@ -13,6 +13,13 @@ public class VectorUtilTest {
         Assert.assertEquals(VectorUtil.dotProduct(vector, vector2), -2, 0.01);
     }
 
+    @Test(expected = AssertionError.class)
+    public void testDotProductVectorLengthsNotEqual() {
+        double[] vector = new double[] {1};
+        double[] vector2 = new double[] {1, -1};
+        VectorUtil.dotProduct(vector, vector2);
+    }
+
     @Test
     public void testL2Norm() {
         double[] vector = new double[] {4, 1};
