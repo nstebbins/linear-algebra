@@ -11,4 +11,5 @@ public class VectorUtilTest {
         double[] vector2 = new double[]{1, -1};
         Assert.assertEquals(VectorUtil.dotProduct(vector, vector2), -2, 0.01);
     }
+    
 }
